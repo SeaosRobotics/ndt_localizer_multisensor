@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<robot name="tugbot">
+  <link
+    name="base_link">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+    </visual>
+  </link>
+  <link
+    name="wheel_left">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+    </visual>
+  </link>
+  <joint
+    name="wheel_left"
+    type="continuous">
+    <origin
+      xyz="0 0.2175 0.195"
+      rpy="-1.5708 0.98331 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_left" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="wheel_right">
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+    </visual>
+  </link>
+  <joint
+    name="wheel_right"
+    type="continuous">
+    <origin
+      xyz="0 -0.2175 0.195"
+      rpy="1.5708 0 -3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel_right" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+</robot>
