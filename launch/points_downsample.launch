@@ -2,7 +2,8 @@
   <arg name="sync" default="false" />
   <arg name="node_name" default="voxel_grid_filter" />
   <!-- <arg name="points_topic" default="/os_cloud_node/points" /> -->
-  <arg name="points_topic" default="/livox/lidar" />
+  <!-- <arg name="points_topic" default="/livox/lidar" /> -->
+  <arg name="points_topic" default="velodyne_points" />
   <arg name="output_log" default="false" />
   <arg name="leaf_size" default="1.0" />
 
