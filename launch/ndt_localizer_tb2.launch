@@ -4,8 +4,10 @@
   <include file="$(find ndt_localizer)/launch/tugbot2.launch" />
 
   <!-- Topics -->
-  <param name="/use_sim_time" value="true" />
-
+  
+  <!-- For simulation use clock , for realtime use system time -->
+  <param name="/use_sim_time" value="false" />
+  
   <arg name="input_sensor_points_topic" default="/filtered_points" doc="Sensor points topic"/>
   <arg name="input_odom_topic" default="/odometry/filtered/global" doc="filtered odometry topic"/>
   <arg name="input_initial_pose_topic" default="/initialpose" doc="Initial position topic to align" />

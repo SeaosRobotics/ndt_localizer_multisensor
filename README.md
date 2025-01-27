@@ -49,9 +49,9 @@ Move your map pcd file (.pcd) to the map folder inside this project (`ndt_locali
 You also need to configure the submap parameters:
 
 ```xml
-<arg name="submap_size_xy" default="50.0" />
-<arg name="submap_size_z" default="20.0" />
-<arg name="map_switch_thres" default="25.0" />
+<arg name="submap_size_xy" default="60.0" />
+<arg name="submap_size_z" default="30.0" />
+<arg name="map_switch_thres" default="30.0" />
 ```
 
 #### Config point cloud downsample

@@ -3,16 +3,19 @@
 
     <!--Model-->
     
-    <!-- <arg name="model_path" default="$(find ndt_localizer)/urdf/tugbot_simple.urdf" /> 
+    <!-- 
+    <arg name="model_path" default="$(find ndt_localizer)/urdf/tugbot_simple.urdf" /> 
     <arg name="gui" default="true" />
     <param name="robot_description" textfile="$(arg model_path)" />
+     --> 
+
+     <!--robot state publisher
+    <node pkg="robot_state_publisher" type="robot_state_publisher" name="state_publisher" output="screen" />
     -->
 
-     <!--robot state publisher-->
-
-    <node pkg="robot_state_publisher" type="robot_state_publisher" name="state_publisher" output="screen" />
-    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
-
+    <!--Joint state publisher 
+    <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher2" />
+    -->
     <!--imu and odometry-->
     <!-- Local EKF -->
     <node pkg="robot_localization" type="ekf_localization_node" name="ekf_localization">
